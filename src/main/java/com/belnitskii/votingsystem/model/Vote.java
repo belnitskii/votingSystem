@@ -31,4 +31,46 @@ public class Vote {
         this.restaurant = restaurant;
         this.voteTime = voteTime;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Restaurant getRestaurant() {
+        return restaurant;
+    }
+
+    public void setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
+    }
+
+    public LocalDateTime getVoteTime() {
+        return voteTime;
+    }
+
+    public void setVoteTime(LocalDateTime voteTime) {
+        this.voteTime = voteTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Vote{" +
+                "id=" + id +
+                ", user=" + user +
+                ", restaurant=" + restaurant +
+                ", voteTime=" + voteTime +
+                '}';
+    }
 }
